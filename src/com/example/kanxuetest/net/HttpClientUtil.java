@@ -92,6 +92,7 @@ public class HttpClientUtil {
 				jsonData = sb.toString();
 				status = NET_SUCCESS;
 				cookies = client.getCookieStore().getCookies();
+				sb=null;
 			}
 
 		} catch (Exception e) {
